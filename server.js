@@ -24,4 +24,6 @@ app.post("/scan", (req, res) => {
   });
 });
 
-app.listen(3000, () => console.log("Server 3000chi portda ishga tushdi"));
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => console.log(`Server ${port}chi portda ishga tushdi`));
